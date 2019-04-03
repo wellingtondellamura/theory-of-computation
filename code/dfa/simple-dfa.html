@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AFD</title>
+    <script type="text/javascript">
+      function delta(q, s){
+        console.log('Delta '+q+','+s);
+        switch(q){
+          case 0:
+              if (s == 'a') return 1;
+              if (s == 'b') return 2;
+              break;
+          case 1:
+              if (s == 'a') return 4;
+              if (s == 'b') return 2;
+              break;
+          case 2:
+              if (s == 'a') return 1;
+              if (s == 'b') return 4;
+              break;
+          case 4:
+              if (s == 'a') return 4;
+              if (s == 'b') return 4;
+        }
+        return -1;
+      }
+
+      function program(q, w){
+        console.log('Program q='+q+',w='+w);
+        if (w.length==0)
+          return q;
+        return program(delta(q, w[0]), w.substring(1));
+      }
+
+      var tape = "aaaaa";
+      var finalStates = [4];
+      var state = program(0, tape);
+
+      if (finalStates.includes(state)){
+        console.log("Acc");
+      } else {
+        console.log("Rej");
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
