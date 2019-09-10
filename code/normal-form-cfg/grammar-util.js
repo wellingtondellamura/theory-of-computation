@@ -31,3 +31,4 @@ function loadGrammar(text){
 console.log(
     loadGrammar(SAMPLE_INPUT)
 );
+
