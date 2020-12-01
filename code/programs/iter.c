@@ -3,7 +3,7 @@
 int main() {
     int x, fat;
     printf("iterativo\n");
-    x = 10;
+    x = 5;
     fat = 1;
     while (x > 1) {
       fat = fat * x;

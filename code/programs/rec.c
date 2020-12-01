@@ -7,7 +7,7 @@ int fatorial(int x) {
 
 int main() {
     printf("recursivo\n");
-    printf("fat=%d\n", fatorial(10));
+    printf("fat=%d\n", fatorial(5));
     return 0;
 }
 

@@ -1,0 +1,9 @@
+MT=Duplo Balanceamento
+A=a,b
+Q=0,1,2,3,4
+q0=s0
+F=s4
+V=A,B
+S_B=_
+S_I=%
+DELTA=(0,%,%,D,0);(0,a,A,D,1);(0,B,B,D,3);(0,_,_,D,4);(1,a,a,D,1);(1,B,B,D,1);(1,b,B,E,2);(2,a,a,E,2);(2,B,B,E,2);(2,A,A,D,0);(3,B,B,D,3);(3,_,_,E,4)
