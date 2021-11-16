@@ -1,8 +1,8 @@
 MT=Duplo Balanceamento
 A=a,b
 Q=0,1,2,3,4
-q0=s0
-F=s4
+q0=0
+F=4
 V=A,B
 S_B=_
 S_I=%
