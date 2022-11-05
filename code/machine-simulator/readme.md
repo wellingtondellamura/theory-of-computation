@@ -44,6 +44,7 @@ Entrada: input.in       (U)
 Saída: output.out       (S)
 Simulador: SIM
 
+```
 spec.m --
          |------
                 | ---> [SIM] ---> output.out
@@ -53,24 +54,4 @@ input.in-
 $ sim spec.m input.in output.out
 
 $ sim -i input.in spec.m
-
-
-
-Saída - S/N
-
-d->[DB]->b
-b->[BD]->d
-b1,b2->[SB]->b
-
-d1,d2->[SD]->d
-
-d1 ->[DB] -> b1-
-                | ---> [SB] ---> b->[BD]->d
-d2 ->[DB] -> b2-
-
-
-db(x) -> y
-bd(x) -> y
-sb(x,y) -> z
-
-fun sd(x,y) -> bd(sb(db(x),db(y)))
+```
