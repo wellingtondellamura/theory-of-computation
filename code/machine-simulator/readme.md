@@ -39,10 +39,13 @@ N ()
 ```
 
 ### Funcionamento
-Especificação: spec.m   (U)
-Entrada: input.in       (U)
-Saída: output.out       (S)
-Simulador: SIM
+
+Os arquivos do usuário são identificados com (U) e os arquivos gerados pelo sistema são identificados por (S)
+
+- Especificação: spec.m   (U)
+- Entrada: input.in       (U)
+- Saída: output.out       (S)
+- Simulador: SIM
 
 ```
 spec.m --
