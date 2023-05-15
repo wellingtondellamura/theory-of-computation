@@ -45,6 +45,7 @@ class Automaton {
 // Exemplo de uso:
 const automaton = new Automaton();
 
+automaton.initialState = 0;
 // Definindo as transições
 automaton.addTransition(0, 'a', 1);
 automaton.addTransition(0, 'b', 1);
@@ -52,7 +53,7 @@ automaton.addTransition(1, 'a', 0);
 automaton.addTransition(1, 'b', 0);
 
 // Definindo os estados finais
-automaton.addFinalState(0);
+automaton.addFinalState(1);
 
 // Testando o autômato
 const inputString = [
